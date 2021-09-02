@@ -46,7 +46,7 @@ The challenge was organize the information with the checkbox and the number, and
 
 ### Built With
 
-- [HMTL]
+- [HTML]
 - [CSS]
 
 ## How To Use
