@@ -1,0 +1,180 @@
+body {
+  margin: 20px 150px;
+  font-family: "Cabin", sans-serif;
+}
+
+.header__content {
+  width: 70%;
+  display: flex;
+}
+
+.header__content p {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.dish {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10%;
+}
+
+.dish__preparation h3 {
+  margin-top: 0;
+}
+
+.dish__preparation h4 {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.dish__second-item {
+  margin-bottom: 20px;
+}
+
+.dish__instruction {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dish__step {
+  margin-right: 10px;
+}
+
+.dish__step p {
+  margin: 0;
+  background-color: orange;
+  border-radius: 10px;
+  padding: 5px 13px;
+  color: white;
+}
+
+.dish__detail {
+  margin: 0;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.step label {
+  margin-left: 10px;
+}
+
+.card {
+  font-size: 0.7rem;
+  padding: 30px 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card__item div {
+  margin-left: 10px;
+}
+
+.card__item p {
+  margin: 0;
+}
+
+.card__item.first {
+  color: orange;
+}
+
+.card__item p:nth-child(1) {
+  font-weight: bolder;
+  color: rgb(211, 211, 211);
+}
+
+.card-media {
+  display: none;
+}
+
+.card-media__item {
+  display: flex;
+  padding: 5px 0;
+}
+
+.card-media__item.first {
+  color: orange;
+}
+
+.card-media__item p:nth-child(1) {
+  font-weight: bolder;
+  color: rgb(211, 211, 211);
+}
+
+.card-media__item p {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 0.7rem;
+}
+
+footer {
+  color: #eeeeee;
+  padding-bottom: 2vh;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer strong {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin: 20px 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 20px 20px;
+  }
+  .header__content {
+    width: 100%;
+  }
+  .dish {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    display: none;
+  }
+  .card-media {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    margin: 20px 10px;
+  }
+}
+
+@media (min-width: 1240px) {
+  body {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
